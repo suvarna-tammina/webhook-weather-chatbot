@@ -1,0 +1,32 @@
+{ "appenders": [
+    { "type": "console" },
+    {
+        "type": "dateFile",
+        "filename": "logs/Error/Error.log",
+        "pattern": "-MM-dd-yyyy",
+        "alwaysIncludePattern": false,
+        "category":"Error"
+    },
+    {
+        "type": "dateFile",
+        "filename": "logs/CISService/CISService.log",
+        "pattern": "-MM-dd-yyyy",
+        "alwaysIncludePattern": false,
+        "category":"CisService"
+    } ,
+    {
+        "type": "dateFile",
+        "filename": "logs/Info/Info.log",
+        "pattern": "-MM-dd-yyyy",
+        "alwaysIncludePattern": false,
+        "category":"Info"
+    },
+    {
+        "type": "dateFile",
+        "filename": "logs/Debug/Debug.log",
+        "pattern": "-MM-dd-yyyy",
+        "alwaysIncludePattern": false,
+        "category":"Debug"
+    }  
+    ]
+}
