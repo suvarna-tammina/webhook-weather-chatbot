@@ -95,8 +95,7 @@ var result;
                     let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
             var options = {
                 method: 'POST',
-                uri: url,
-                proxy: 'http://192.168.1.1:808'
+                uri: url
               
             };
             var req = request(options, cb);
