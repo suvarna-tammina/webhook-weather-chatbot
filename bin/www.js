@@ -25,6 +25,12 @@ var server= app.listen(9999,function(){
 
     app.get('/', function (req, res) {
         res.render('index', {weather: null, error: null});
+      });
+      
+      app.get('/test', function (req, res) {
+        console.log('response success');
+        res.status(200);
+        res.send({result:'Success'});
       })
  
       app.post('/webhook', function (req, res) {
