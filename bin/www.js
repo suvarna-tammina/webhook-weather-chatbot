@@ -65,10 +65,10 @@ var result;
         if(err){
             console.log("error", err);
         }
+        console.log('body response:',JSON.parse(body));
         var weather = JSON.parse(body)
         if(weather.message === 'city not found'){
             result = "Unable to get the weather"+weather.message;
-
         }
         else{
             result = "Right now its"+weather.main.temp+ 'degrees with'+ weather.name;
