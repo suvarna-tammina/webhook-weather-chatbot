@@ -47,7 +47,10 @@ var result;
                     let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
             var options = {
                 method: 'POST',
-                uri: url
+                url: url,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
               
             };
             var req = request(options, cb);
